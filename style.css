@@ -1,0 +1,390 @@
+*{
+  
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", system-ui;
+}
+
+.Navbar{
+  display: flex;
+  flex-direction: column;
+}
+
+.Navbar_section1{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+}
+
+.Navbar_section1_logo{
+  width: 10%;
+  cursor: pointer;
+}
+
+.Navbar_section1_logo img{
+  width: 100%;
+}
+
+.Navbar_section1_desc{
+  display:  flex;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+}
+.sub1{
+  font-weight: 700;
+  cursor: pointer;
+}
+.sub2{
+  color: darkgray;
+  background-color: transparent;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+.sub2:hover{
+  background-color: gainsboro;
+  color: black;
+}
+.Navbar_section1_home{
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+}
+.Navbar_section1_home p{
+  background-color: transparent;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.Navbar_section1_home p:hover{
+  background-color: gainsboro;
+}
+
+#globe{
+  background-color: transparent;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#globe:hover{
+  background-color: gainsboro;
+}
+.Navbar_section1_home_login{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  border: solid gainsboro 1px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  cursor:pointer;
+}
+.Navbar_section1_home_login:hover{
+  box-shadow: 2px 2px 5px  gainsboro;
+}
+
+/* Navbar section2 */
+.Navbar_section2{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid gainsboro 1px;
+  padding: 20px;
+  margin: 5px;
+}
+.Navbar_section2_container{
+  font-size: 10px;
+  border:  solid gainsboro 1px;
+  box-shadow: 1px 1px 2px 2px gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.Navbar_section2_sub1 input,.Navbar_section2_sub2 input, .Navbar_section2_sub3 input,.Navbar_section2_sub4_input input{
+  border: none;
+  width: 80%;
+
+}
+.Navbar_section2_sub1 input:focus, .Navbar_section2_sub2 input:focus,.Navbar_section2_sub3 input:focus, .Navbar_section2_sub4_input input:focus{
+  outline: none;
+}
+.Navbar_section2_sub1,.Navbar_section2_sub2,.Navbar_section2_sub3,.Navbar_section2_sub4{
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.Navbar_section2_sub2,.Navbar_section2_sub3,.Navbar_section2_sub4{
+  border-left: solid gainsboro 1px;
+}
+.Navbar_section2_sub1:hover,.Navbar_section2_sub2:hover,.Navbar_section2_sub3:hover,.Navbar_section2_sub4:hover{
+  background-color: gainsboro;
+  border-radius: 25px; 
+  cursor: pointer;
+  
+}
+
+.Navbar_section2_sub1:hover input,.Navbar_section2_sub2:hover input,.Navbar_section2_sub3:hover input,.Navbar_section2_sub4:hover input{
+  background-color: gainsboro; 
+  
+}
+
+.Navbar_section2_sub4{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+#magnifying_glass{
+  background-color: red;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+.Navbar_section3{
+  display: none;
+  width: 80%;
+  gap:30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: solid gainsboro 1px;
+  border-radius: 25px;
+  align-items: center;
+  box-shadow: 1px 1px 0.5px 1px gainsboro;
+}
+
+.Navbar_section3_sub{
+  flex-grow: 3;
+}
+
+.Navbar_section3_sub input{
+  width: 100%;
+  border: none;
+}
+
+.Scroll_icon{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  gap: 20px;
+
+}
+
+.icon{
+  width: 30%;
+  text-align: center;
+  border-bottom: solid transparent 1px;
+}
+
+.icon:hover{
+  cursor: pointer;
+  border-bottom: solid black 1px;
+}
+
+.Coursecard_container,.Recommended_container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+ 
+}
+
+.Coursecard,.Recommended_coursecard{
+  width: 23%;
+  padding: 5px;
+}
+.Coursecard:hover,.Recommended_coursecard:hover{
+  cursor: pointer;
+}
+.Coursecard span,.Recommended_coursecard span{
+  color: grey;
+}
+.Coursecard img, .Recommended_coursecard img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Recommended_section h2 {
+  padding: 5px;
+  margin: 10px;
+}
+
+.Footer_Section{
+  background-color: #F7F7F7;
+  margin: 10px;
+  padding: 5px;
+}
+
+.Footer_Section_categories{
+  width: 90%;
+  display: flex;
+  gap:30px;
+  margin: 10px;
+  padding: 5px;
+  padding-bottom: 20px;
+  border-bottom: solid gainsboro 1px;
+  flex-wrap: wrap;
+}
+
+.Footer_Section_categories p{
+  border-bottom: solid transparent 2px;
+}
+.Footer_Section_categories p:hover{
+  border-bottom: solid black 2px ;
+  cursor: pointer;
+}
+
+.Footer_Section_categories_subcontent{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 10px;
+  padding: 5px;
+  padding-bottom: 20px;
+  border-bottom: solid gainsboro 1px;
+}
+.Footer_Section_categories_subcontent1,.Footer_Section_categories_subcontent2,.Footer_Section_categories_subcontent3,.Footer_Section_categories_subcontent4{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:40px;
+}
+.subcontent:hover{
+  cursor: pointer;
+}
+
+.subcontent p{
+  color: gray;
+}
+
+.Footer_Section_Support{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 10px;
+  padding: 5px;
+  padding-bottom: 20px;
+  border-bottom: solid gainsboro 1px;
+}
+.support_content{
+  padding: 10px;
+  margin: 10px;
+}
+.support_content p{
+  color: gray;
+}
+
+.Footer_Section_Contact{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contact1{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+  border-bottom: solid transparent 1px;
+}
+.contact1 span:hover{
+  cursor: pointer;
+  border-bottom: solid black 1px;
+}
+.contact2{
+  display: flex;
+  gap: 20px;
+}
+.contact2_sub{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.contact2_sub p{
+  border-bottom: solid transparent 1px;
+}
+.contact2_sub:hover{
+  cursor: pointer;
+}
+
+.contact2_sub p:hover{
+  border-bottom: solid black 1px;
+}
+
+
+
+/* Media Query */
+@media screen and (max-width:800px) {
+
+  .Coursecard,.Recommended_coursecard{
+    width: 45%;
+  }
+
+.Footer_Section_Contact{
+  flex-direction: column;
+  gap:20px;
+}
+  
+}
+
+
+@media screen and (max-width:500px) {
+  .Navbar_section1, .Navbar_section2{
+    display: none;
+  }
+
+  .Navbar_section3{
+    display: flex;
+  }
+
+  .icon p{
+    font-size: 8px;
+  }
+  
+  .Coursecard,.Recommended_coursecard{
+    width: 90%;
+
+  }
+
+ 
+}
