@@ -8,6 +8,12 @@ body{
   font-family: "Poppins", system-ui;
 }
 
+.Nav{
+  position: sticky;
+  top:0;
+  background-color: white;
+  z-index: 20;
+}
 .Navbar{
   display: flex;
   flex-direction: column;
@@ -100,11 +106,34 @@ body{
   padding-right: 15px;
   border-radius: 20px;
   cursor:pointer;
+  position: relative;
 }
 .Navbar_section1_home_login:hover{
   box-shadow: 2px 2px 5px  gainsboro;
 }
-
+.Navbar_section1_home_login_onclick{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap:10px;
+  border: solid transparent 1px;
+  position: absolute;
+  right: 0px;
+  top:80px;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0.5px 0.5px  3px gainsboro;
+  border-radius: 5px;
+  display: none;
+  width: 12%;
+}
+.Navbar_section1_home_login_onclick p{
+  padding: 5px;
+}
+.Navbar_section1_home_login_onclick p:hover{
+  background-color: gainsboro;
+  cursor: pointer;
+}
 /* Navbar section2 */
 .Navbar_section2{
   display: flex;
@@ -173,6 +202,7 @@ body{
 
 .Navbar_section3{
   display: none;
+  justify-content: center;
   width: 80%;
   gap:30px;
   margin-left: 10px;
@@ -194,7 +224,95 @@ body{
   width: 100%;
   border: none;
 }
-
+/* Login or signup */
+.overlay{
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top:0;
+  left: 0;
+  display: none;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+}
+.Logincontainer{
+  display: none;
+  flex-direction: column;
+  border: transparent;
+  gap:10px;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 40;
+  top:40px;
+  left:500px;
+}
+.login_head{
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  gap: 250px;
+  align-items: center;
+  border-bottom: solid gainsboro 1px;
+  padding-bottom: 10px;
+}
+#Logincontainer_close{
+  cursor: pointer;
+}
+.login_mid{
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_mid h2{
+  padding-bottom: 20px;
+  color: #f00a79;
+  
+}
+.login_mid input{
+  border: solid gainsboro 1px;
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.login_mid button{
+  background-color: #f00a79;
+  color: white;
+  width: 90%;
+  padding: 15px;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.login_mid span{
+  margin-top: 10px;
+  text-align: center;
+}
+.login_foot{
+  display: flex;
+  gap:150px;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  border: solid gainsboro 1px;
+  border-radius: 5px;
+}
+.login_foot i{
+  font-size: 24px;
+}
+.login_foot:hover{
+  background-color: gainsboro;
+}
+/* Scroll icons */
 .Scroll_icon{
   display: flex;
   margin: 10px;
@@ -238,6 +356,12 @@ body{
 .Coursecard img, .Recommended_coursecard img{
   width: 100%;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Coursecard img:hover, .Recommended_coursecard img:hover{
+  transform:  scale(1.01);
+  box-shadow: 0 8px 16px rbga(0,0,0,0.3);
+
 }
 
 .Recommended_section h2 {
@@ -350,10 +474,31 @@ body{
 .contact2_sub p:hover{
   border-bottom: solid black 1px;
 }
-
+.Navlist{
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  color: #f00a79;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+  display: none;
+}
+.Navlist div:hover{
+  cursor: pointer;
+}
+.Navlist a{
+  text-decoration: none;
+}
+.Navlist a:visited{
+  color:#f00a79;
+}
 
 
 /* Media Query */
+
 @media screen and (max-width:800px) {
 
   .Coursecard,.Recommended_coursecard{
@@ -386,5 +531,11 @@ body{
 
   }
 
+  .Navlist{
+    display: flex;
+  }
+  
  
 }
+
+

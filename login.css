@@ -1,0 +1,115 @@
+
+*{
+  
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", system-ui;
+}
+.Logincontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: transparent;
+  gap:10px;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+.login_head{
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid gainsboro 1px;
+  padding-bottom: 10px;
+}
+#Logincontainer_close{
+  cursor: pointer;
+}
+.login_mid{
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_mid h2{
+  padding-bottom: 20px;
+  color: #f00a79;
+  
+}
+.login_mid input{
+  border: solid gainsboro 1px;
+  padding: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.login_mid button{
+  background-color: #f00a79;
+  color: white;
+  width: 90%;
+  padding: 15px;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.login_mid span{
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+.login_foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 15px;
+  align-items: center;
+  border: solid gainsboro 1px;
+  border-radius: 5px;
+}
+.login_foot i{
+  font-size: 24px;
+}
+.login_foot:hover{
+  background-color: gainsboro;
+}
+
+@media screen and (max-width:1440px) {
+
+  .Logincontainer{
+    width: 60%;
+    position: absolute;
+    top:20px;
+    left:150px;
+  }
+}
+
+
+@media screen and (max-width:770px) {
+
+  .Logincontainer{
+    width: 70%;
+    position: absolute;
+    top:20px;
+    left:50px;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .Logincontainer{
+    width: 90%;
+    position: static;
+    margin: 5px;
+  }
+}
